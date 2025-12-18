@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+id = "lidar_to_3D"
+version = "6.0.0"
+name = "3D à partir du lidar"
+tagline = "Import Lidar HD Multi-Dalles, Terrain et Végétation Optimisée"
+maintainer = "Emile thiebaut <thiebautemile07@gmail.com>"
+type = "add-on"
+
+tags = ["Mesh", "Import-Export", "Object"]
+
+blender_version_min = "3.0.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+[permissions]
+network = "Requis pour installer la librairie laspy via pip"
+files = "Charge les assets depuis library.blend et importe les fichiers LAZ"
+python-module-install = "Requis pour installer laspy"
